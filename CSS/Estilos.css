@@ -287,7 +287,7 @@ nav li:hover{
          /*La propiedad margin aplica margenes a un elemento*/
       .logo{
          margin-left:60px;
-         margin-right: 60px;
+         margin-right: 120px;
          padding-bottom: 10px;
          padding-top: 10px;
          }
