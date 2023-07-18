@@ -1,0 +1,373 @@
+/*Esto es un comentario en CSS*/
+
+/*GENERAL*/
+
+/*Aplicar estilo general a la página web*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Box-sizzing ajusta el tamaño de la caja tanto de relleno como de margen
+   (margin y padding)*/
+*{
+   margin: 0;
+   padding: 0;
+   font-family: arial;
+   box-sizing: border-box;
+}
+
+/*BODY*/
+
+/*Aplicar estilo al cuerpo de la página web*/
+body{
+   background-color: #EDEDED;
+}
+
+/*Aplicar estilos a titulos h1*/
+   /*La propiedad rem es el tamaño de la letra del elemento raíz.*/
+h1{
+   font-size: 2rem;
+}
+
+/*Vista de escritorio*/
+
+/*NAVEGADOR*/
+
+/*Aplicar estilo al id navegador*/
+   /*La propiedad padding aplica relleno a un elemento*/
+#navegador{
+   background-color: #3B3B3B;
+   color:#FFFFFF;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+/*Aplicar estilo a la clase nav*/
+   /*La propiedad margin aplica margenes a un elemento*/
+nav{
+   max-width: 1100px;
+   margin: auto;
+}
+
+/*Aplicar estilo a la lista de la clase nav*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+nav ul{
+   display: flex;
+   align-items: center;
+}
+
+/*Aplicar estilo a los elementos de la lista*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*List-style: none elimina los bullets de las listas*/
+   /*La propiedad margin aplica margenes a un elemento*/
+nav li{
+   background: #7E7E7E;
+   padding: 5px;
+   height: 20px;
+   list-style: none;
+   margin-right: 15px;
+   border-radius: 10px;
+   height:max-content;
+   width: 100px;
+   text-align: center;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/*Aplicar estilo al pasar por los elementos de la lista*/
+nav li:hover{
+   background: #6495ED;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/*Aplicar estilo a la clase enviar-derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.enviar-derecha{
+   margin-left:auto;
+}
+
+/*CONTENEDOR*/
+
+/*Aplicar estilos al id contenedor*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   #contenedor{
+      max-width: 1100px;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      display: flex;
+      background: #FFFFFF;
+   }
+   
+   /*Aplicar estilo al id contenedorInterno*/
+      /*Flex-grow es un factor de crecimiento*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   #contenedorInterno{
+      flex-grow: 1;
+      padding: 10px;
+   }
+   
+   /*Aplicar estilo a la división que no es parte del contenido del id contenedor*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      #contenedor aside{
+         width: 300px;
+         background: #AEAEAE;
+         padding-top: 10px;
+         padding-right: 30px;
+         padding-left: 30px;
+      }
+   
+   /*Aplicar estilo a la clase categoria*/
+      /*La propiedad display define el tipo de caja usado para presemtar el elemento
+      en pantalla*/
+      /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+      todo el ancho del padre).*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .categoria{
+      display: flex;
+      background:#F1F1F1;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-bottom: solid 1.5px #B5B5B5;
+   }
+   
+   /*Aplicar estilo a los bloques de la página articuloRelacionado*/
+      /*La propiedad margin aplica margenes a un elemento*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*Transition se usa para animar o crear un efecto en la imagen*/
+      /*Transition duration es el tiempo que durará la animación*/
+   .articuloRelacionado{
+      width: 280px;
+      background: #3CB2C8;
+      margin: auto;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 6px;
+      color: #FFFFFF;
+      transition: all .2s;
+   }
+   
+   /*Aplicar estilo a los bloques de la página articuloRelacionado al
+   pasar por ellos*/
+      /*La propiedad transfor: scale cambia la escala de la imagen*/
+      /*La propiedad box-shadow añade una sombra alrededor del elemento*/
+      /*Box-shadow = posición x | posición y | tamaño de sombra | color de sombra*/
+   .articuloRelacionado:hover{
+      transform: scale(1.04);
+      box-shadow: 0px 0px 5px 0px #777;
+   }
+   
+   /*Aplicar estilo a la clase navPost*/
+      /*La propiedad display define el tipo de caja usado para presemtar el elemento
+      en pantalla*/
+      /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+      todo el ancho del padre).*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .navPost{
+      display: flex;
+      text-align: center;
+      margin-top: 20px;
+      border-top: solid 2px #E9E9E9;
+   }
+   
+   /*Aplicar estilo a los bloques de la clase navPost*/
+      /*Flex-grow es un factor de crecimiento*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .navPost div{
+      flex-grow: 1;
+      padding: 10px;
+   }
+   
+   /*Aplicar estilo a los párrafos de los bloques de la clase navPost*/
+   .navPost div p{
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+   }
+   
+   /*Aplicar estilo al pasar por los párrafos de los bloques de la clase navPost*/
+   .navPost div p:hover{
+      color: #057BA7;
+      cursor: pointer;
+   }
+   
+   /*FOOTER*/
+   
+   /*Aplicar estilo a la sección footer*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   section#footer{
+      background-color: #3B3B3B;
+      color: #ffffff;
+   }
+   
+   /*Aplicar esilo a la clase footer*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad display define el tipo de caja usado para presemtar el elemento
+      en pantalla*/
+      /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+      todo el ancho del padre).*/
+      /*La propiedad margin aplica margenes a un elemento*/
+      /*La propiedad space-between se usa para dejar espacio entre elementos*/
+   footer{
+      display: flex;
+      max-width: 1100px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: auto;
+      justify-content: space-between;
+   }
+   
+   /*Vista dispositivos móviles*/
+   
+   /*IPAD*/
+   @media (max-width: 768px){
+   /*Cambiar tamaño del id contenedor*/
+      /*La propiedad flex-direction define el orden y la orientación de las cajas en un
+      contenedor flexible.*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   #contenedor{
+      flex-direction: column;
+      margin-bottom: 0px;
+   }
+
+   /*Cambiar tamaño de la clase aside del id contenedor*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad display define el tipo de caja usado para presemtar el elemento
+      en pantalla*/
+      /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+      todo el ancho del padre).*/
+      /*La propiedad flex-wrap determina si se permiten crear múltiples líneas de
+      cajas. Los valores disponibles son nowrap, wrap, y wrap-reverse*/
+   #contenedor aside {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      background: #3cb2c8;
+	}
+
+   /*Cambiar tamaño de la clase articuloRelacionado*/
+   .articuloRelacionado {
+      width: 47%;
+   }
+
+   /*Cambiar tamaño del menu de navegación y footer*/
+   nav, footer {
+      max-width: 95%;
+   }
+
+   /*Cambiar tamaño de la lista del menu de navegación*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   nav li.menu {
+      padding-bottom: 25px;
+	}
+}
+
+   /*MÓVIL*/
+   @media(max-width:1125px){
+      /*Cambiar tamaño de lista de navegación*/
+         /*La propiedad flex-wrap determina si se permiten crear múltiples líneas de
+         cajas. Los valores disponibles son nowrap, wrap, y wrap-reverse*/
+      ul{
+         max-width: 95%;
+         flex-wrap: wrap-reverse;
+      }
+   
+      /*Cambiar tamaño a la clase logo (logo azul)*/
+         /*La propiedad margin aplica margenes a un elemento*/
+      .logo{
+         margin: auto;
+         margin-bottom: 15px;
+         margin-right: 10px;
+         margin-left: 140px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding-bottom: 10px;
+         }
+   
+      /*Cambiar tamaño a la lista de navegación*/
+         /*La propiedad padding aplica relleno a un elemento*/
+         /*La propiedad margin aplica margenes a un elemento*/
+      nav li.menu{
+         padding-bottom: 25px;
+         margin-left: 24px;
+      }
+
+      nav li{
+         margin-left:25px;
+         margin-right: 20px;
+         padding-left: 5px;
+         padding-right: 5px;
+      }
+   
+      /*Cambiar tamaño de footer*/
+         /*La propiedad padding aplica relleno a un elemento*/
+         /*La propiedad flex-direction define el orden y la orientación de las cajas en un
+         contenedor flexible.*/
+      footer{
+         padding-bottom: 0px;
+         flex-direction: column;
+         text-align: center;
+         background: #414141;
+         padding-bottom: 10px
+      }
+   
+      /*Cambiar tamaño de los párrafos de la clase contacto*/
+         /*La propiedad margin aplica margenes a un elemento*/
+      .contacto p{
+         margin-right: -50px;
+         margin-top: 4px;
+      }
+   
+      /*Cambiar tamaño de la clase articuloRelacionaod*/
+      .articuloRelacionado{
+         width: 100%;
+      }
+
+      /*Cambiar tamaño del id contenedor*/
+      /*La propiedad flex-direction define el orden y la orientación de las cajas en un
+      contenedor flexible.*/
+      /*La propiedad margin aplica margenes a un elemento*/
+      #contenedor{
+         flex-direction: column;
+         margin-bottom: 0px;
+      }
+
+      /*Cambiar tamaño de la clase aside del id contenedor*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad display define el tipo de caja usado para presemtar el elemento
+      en pantalla*/
+      /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+      todo el ancho del padre).*/
+      /*La propiedad flex-wrap determina si se permiten crear múltiples líneas de
+      cajas. Los valores disponibles son nowrap, wrap, y wrap-reverse*/
+      #contenedor aside {
+         width: 100%;
+         padding: 10px;
+         padding-left: 50px;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: flex-start;
+         background: #3cb2c8;
+      }
+
+         /*Cambiar tamaño a la clase logo (logo azul)*/
+         /*La propiedad margin aplica margenes a un elemento*/
+         .logo2{
+            margin-bottom: 15px;
+            margin-left: 10px;
+            margin-right: -40px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            }
+   }
