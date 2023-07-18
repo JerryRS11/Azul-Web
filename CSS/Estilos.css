@@ -289,7 +289,7 @@ nav li:hover{
          margin: auto;
          margin-bottom: 15px;
          margin-right: 300px;
-         margin-left: -101px;
+         margin-left: 101px;
          margin-top: 225px;
          margin-bottom: 10px;
          padding-bottom: 10px;
@@ -361,13 +361,13 @@ nav li:hover{
          background: #3cb2c8;
       }
 
-         /*Cambiar tamaño a la clase logo (logo azul)*/
-         /*La propiedad margin aplica margenes a un elemento*/
-         .logo2{
-            margin-bottom: 15px;
-            margin-left: 230px;
-            margin-right: 10px;
-            margin-top: 20px;
-            padding-bottom: 20px;
-            }
+      /*Cambiar tamaño a la clase logo (logo azul)*/
+      /*La propiedad margin aplica margenes a un elemento*/
+      .logo2{
+         margin-bottom: 15px;
+         margin-left: 230px;
+         margin-right: 120px;
+         margin-top: 20px;
+         padding-bottom: 20px;
+      }
    }
