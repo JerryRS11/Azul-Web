@@ -288,8 +288,8 @@ nav li:hover{
       .logo{
          margin: auto;
          margin-bottom: 15px;
-         margin-right: 10px;
-         margin-left: 101px;
+         margin-right: 300px;
+         margin-left: -101px;
          margin-top: 225px;
          margin-bottom: 10px;
          padding-bottom: 10px;
