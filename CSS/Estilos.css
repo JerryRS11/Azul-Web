@@ -286,7 +286,7 @@ nav li:hover{
       /*Cambiar tamaño a la clase logo (logo azul)*/
          /*La propiedad margin aplica margenes a un elemento*/
       .logo{
-         margin-left:60px;
+         margin-left:-60px;
          margin-right: 120px;
          padding-bottom: 10px;
          padding-top: 10px;
